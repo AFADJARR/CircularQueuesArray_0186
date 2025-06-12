@@ -35,4 +35,14 @@ public:
         FRONT = 0; //2.A
         REAR = 0; //2.B
     }
-   
+    else
+    {
+        // Jika REAR berada dinposisi terakhir array,kembali ke awal array
+        if (REAR == max - 1)
+            REAR = 0;
+        else 
+            REAR = REAR + 1;
+    }
+    queue_array[REAR] = num;
+}
+
